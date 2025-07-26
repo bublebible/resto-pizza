@@ -2,8 +2,9 @@
 
 Selamat datang di repositori Pizza Kevvy! Ini adalah proyek website pemesanan pizza fungsional dan modern yang dibangun dengan fokus pada pengalaman pengguna yang dinamis dan interaktif. Proyek ini menggabungkan backend PHP untuk fungsionalitas inti dengan animasi CSS3 dan JavaScript untuk menciptakan tampilan yang menarik.
 
-![Screenshot Halaman Utama](https://i.ibb.co/L95S7yF/image-7b9624.png)
-*(Anda bisa mengganti link di atas dengan screenshot proyek Anda sendiri)*
+![Screenshot Halaman Utama](https://github.com/user-attachments/assets/e48a26b2-c244-4be1-859a-192d0f37dbb5)
+
+
 
 ---
 
@@ -89,6 +90,6 @@ Untuk menjalankan proyek ini di lingkungan lokal Anda, ikuti langkah-langkah ber
 
 ## 👨‍💻 Kontributor
 
-Dibuat dan dikembangkan oleh **[Nama Anda di Sini]**.
+Dibuat dan dikembangkan oleh **Friena Sellisya Saputri**.
 
 Terima kasih telah mengunjungi proyek ini!
