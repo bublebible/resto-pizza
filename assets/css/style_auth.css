@@ -1,0 +1,152 @@
+/* File: css/style-auth.css */
+
+/* Mengimpor font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Reset dasar dan pengaturan latar belakang */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    /* Latar belakang terbelah merah-putih seperti bendera */
+    background: linear-gradient(to bottom, #c42026 50%, #ffffff 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Mencegah scroll */
+}
+
+/* Kontainer utama untuk memposisikan box form */
+.auth-container {
+    position: relative;
+    z-index: 2; /* Pastikan form di atas pizza */
+}
+
+/* Styling untuk box form putih */
+.form-box {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    text-align: center;
+}
+
+/* Logo di dalam form */
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo-container img {
+    max-width: 100px;
+}
+
+/* Judul form (Masuk / Daftar) */
+.form-box h1 {
+    margin: 0 0 20px 0;
+    color: #333;
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+/* Grup input yang berisi label dan field */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #fca92c; /* Border oranye saat diklik */
+}
+
+/* Tombol Submit */
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #fca92c;
+    border: none;
+    border-radius: 10px;
+    color: #8b3c00;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #ffb94e;
+}
+
+/* Link di bagian bawah form */
+.form-footer {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #777;
+}
+
+.form-footer a {
+    color: #c42026;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Dekorasi Latar Belakang Pizza --- */
+.pizza-bg {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100vh;
+    z-index: 1;
+}
+
+.pizza-bg img {
+    height: 100%;
+    width: auto;
+}
+
+.pizza-left {
+    left: 0;
+    
+}
+
+.pizza-right {
+    right: 0;
+}
+
+/* Logika untuk menampilkan/menyembunyikan pizza berdasarkan mode halaman */
+/* Saat mode login, sembunyikan pizza kanan */
+body.login-mode .pizza-right {
+    display: none;
+}
+
+/* Saat mode register, sembunyikan pizza kiri */
+body.register-mode .pizza-left {
+    display: none;
+}

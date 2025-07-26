@@ -1,0 +1,131 @@
+/* semua menu */
+.semua-menu-page {
+    background: linear-gradient(to bottom, #3d0000, #1a0000);
+    padding: 120px 5% 40px 5%; /* Padding atas untuk memberi ruang navbar fixed-top */
+    color: white;
+}
+
+/* Promo Banner */
+.promo-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #8B0000, #c42026);
+    border-radius: 15px;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+}
+.promo-content h2 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+.promo-content .subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.8;
+}
+.promo-subtext {
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+.promo-paket {
+    background-color: #a52a2a;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+}
+.promo-harga {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.promo-image img {
+    max-width: 250px;
+    transform: rotate(15deg);
+}
+
+/* Filter Kategori */
+.kategori-filter {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.filter-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.filter-box .filter-icon {
+    font-size: 4rem;
+}
+.filter-box p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8B0000;
+    background-color: white;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.filter-box.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fca92c;
+    transform: translateY(-5px);
+}
+
+/* Tampilan Menu */
+.menu-display .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+/* Anda bisa gunakan style .menu-card dari CSS utama Anda jika sudah ada */
+.menu-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+.card-image-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+.card-title { font-size: 1.4rem; font-weight: bold; color: #8B0000; }
+.card-description { font-size: 0.9rem; color: #666; flex-grow: 1; }
+.card-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; }
+.card-price { font-size: 1.2rem; font-weight: bold; color: #333; margin: 0; }
+.btn-card { background-color: #8B0000; color: white; border: none; padding: 8px 20px; border-radius: 20px; cursor: pointer; }
+
+/* Tombol Kembali */
+.kembali-container {
+    text-align: center;
+    margin-top: 50px;
+}
+.btn-kembali {
+    background-color: #a52a2a;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
